@@ -37,6 +37,14 @@ alert('That\'s a good Guess')
 alert ('That\'s not cool')
   }
  
+  //Comment
+  let com = prompt('Do you have any Comment?')
+  if(com==='yes'){
+    prompt('Write Here')
+    alert('Thank You!')
+  } else {
+    alert('Thank You!')
+  }
 
 
   
