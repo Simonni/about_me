@@ -43,11 +43,12 @@ alert ('That\'s not cool')
     prompt('Write Here')
     alert('Thank You!')
   } else {
-    alert('Thank You!')
+    
   }
+  alert('Thank You!')
 
-
-let chanArr = ['nbc', 'aljezeera', 'cnn', 'bbc', 'foxnews']
+let funOne = function (){
+  let chanArr = ['nbc', 'aljezeera', 'cnn', 'bbc', 'foxnews']
 for (let i=0; i< chanArr.length; i++){
   let news = prompt('Guess the popular news channel number?')
   if (news == 3){
@@ -62,17 +63,21 @@ for (let i=0; i< chanArr.length; i++){
   console.log('Channel News ', i)
   console.log(chanArr[i])
 }
-
-let statesIVisited = ['CA', 'MD', 'VA','NY','MA','OH','DC']
-for (let i =0; i<statesIVisited.length; i++){
-  let states = prompt('Guess Which States have I Visited? Please, Use 2-letter Upper-Case state Code')
-  if(states =='CA'||states=='MD'|| states=='NY'|| states=='MA' || states=='OH' || states=='DC'){
-    alert('You right, you got ' + (i+1) + ' out of 7')
-  } else {
-    alert ('Nop, try again!')
-  }
-  console.log('States I have visited ', i+1)
-  console.log(statesIVisited[i])
 }
-alert ('Thank You!')
 
+let funTwo = function (){
+  let statesIVisited = ['CA', 'MD', 'VA','NY','MA','OH','DC']
+  for (let i =0; i<statesIVisited.length; i++){
+    let states = prompt('Guess Which States have I Visited? Please, Use 2-letter Upper-Case state Code')
+    if(states =='CA'||states=='MD'|| states=='NY'|| states=='MA' || states=='OH' || states=='DC'){
+      alert('You right, you got ' + (i+1) + ' out of 7')
+    } else {
+      alert ('Nop, try again!')
+    }
+    console.log('States I have visited ', i+1)
+    console.log(statesIVisited[i])
+  } 
+}
+  funTwo()
+  funOne()
+  alert ('Thank You!')
